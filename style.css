@@ -100,7 +100,7 @@
 }
 
 #slide-4{
-    background: url("media/windows-versions.png");
+    background: url("media/windows-versions.png") !important;
     flex-direction: row;
     justify-content: center;
     gap: 50vh;
@@ -130,7 +130,7 @@
 }
 
 #slide-6{
-    background: url("media/linux-versions.png");
+    background: url("media/linux-versions.png") !important;
 }
 
 #linux-natsuki{
