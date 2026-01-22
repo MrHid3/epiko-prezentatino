@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    pointer-events: none;
+    user-select: none;
+}
+
+* {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
+}
+*::-webkit-scrollbar {
+    display: none;  /* Older Safari and Chromium */
+}
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gugi-regular {
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e4e4e4;
+    pointer-events: all;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    overflow: hidden;
+}
+
+#slide-1{
+    background: url("media/fma_prezentacja_intro.gif");
+}
+
+#slide-1 h1{
+    width: min-content;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 20vh;
+    color: white;
+}
+
+#slide-2{
+    background: url("media/dn_prezentacja.gif");
+}
+
+#slide-2 h1{
+    font-size: 15vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    padding: 5vh;
+}
+
+#slide-3{
+    background: url("media/ddlc.jpg");
+}
+
+#ddlc-apple-image{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    height: 20vh;
+    width: 20vh;
+}
+
+#ddlc-windows-image{
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    height: 30vh;
+}
+
+#ddlc-linux-image{
+    position: absolute;
+    top: 25%;
+    left: 42%;
+    height: 30vh;
+}
+
+#slide-4{
+    background: url("media/windows-versions.webp");
+    flex-direction: row;
+    justify-content: center;
+    gap: 50vh;
+}
+
+#slide-4 ul{
+    display: block;
+    font-size: 10vh;
+}
+
+#windows-sayori{
+    position: absolute;
+    bottom: 5%;
+    right: 20%;
+}
+
+#slide-5{
+    background: url("media/macos.jpg");
+    /*background-position: 0 20%;*/
+}
+
+#macos-yuri{
+    position: absolute;
+    bottom: 11%;
+    left: 5%;
+    transform: scale(1.3);
+}
+
+#slide-6{
+    background: url("media/linux-versions.webp");
+}
+
+#linux-natsuki{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%) scale(1.3);
+}
+
+#slide-7{
+    background-color: black;
+    overflow: hidden !important;
+}
+
+#slide-7 h1{
+    color: white;
+    animation: in-the-end 2s ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    font-size: 20vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes in-the-end {
+    0% {
+        transform: scaleZ(7) translate(-50%, -50%);
+    }
+    10%{
+        transform: translateZ(15vh) translate(-50%, -50%);
+    }
+    20%{
+        transform: rotate(180deg) translate(-50%, -50%);
+    }
+    30%{
+        transform: scale(2, 3) translate(-50%, -50%);
+    }
+    40% {
+        transform: skewX(50deg) translate(-50%, -50%);
+    }
+    50%{
+        transform: skewY(50deg) translate(-50%, -50%);
+    }
+    60%{
+        transform: rotate(720deg) translate(-50%, -50%);
+    }
+    70%{
+        transform: scale3d(1, 2, 3) translate(-50%, -50%);
+    }
+    80%{
+        transform: rotate3d(5, 4, 6, 30deg) translate(-50%, -50%);
+    }
+    90% {
+        transform: perspective(400px) translate(-50%, -50%);
+    }
+    100%{
+        transform: translate(-50%, -50%);
+    }
+}
